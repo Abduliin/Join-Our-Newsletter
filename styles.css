@@ -1,35 +1,109 @@
 @font-face {
-    font-family: Poppins;
+    font-family: 'Poppins';
     src: url(Poppins/Poppins-SemiBold.ttf);
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Poppins;
+    font-family: 'Poppins';
     src: url(Poppins/Poppins-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Poppins;
+    font-family: 'Poppins';
     src: url(Poppins/Poppins-Medium.ttf);
     font-weight: 500;
     font-style: normal;
 }
 
 body {
-    font-family: Poppins;
+    font-family: 'Poppins';
+    background-color: #F9FAFB;
 }
 
 .header {
     text-align: center;
+    display: flex;
+    width: 47%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto 40px;
 }
 
 .form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    flex-direction: column;
+    margin: auto;
+    width: 34vw;  /* 100% del ancho de la pantalla */
+    height: 25vh; /* 100% de la altura de la pantalla */
+    border-radius: 16px;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+    padding: 25px 25px 13px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: #6C727F;
+}
+
+p {
+    font-size: 14px;
+    line-height: 0.875rem;
+    font-weight: 400;
+    color: #394150;
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: #F9FAFB;
+    width: 34vw;  /* 100% del ancho de la pantalla */
+    height: 9.5vh; /* 100% de la altura de la pantalla */
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    color: #394150;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px 0;
+}
+
+
+input::placeholder {
+    color: #394150;
+    font-size: 16px;
+    line-height: 1rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-align: center;
+}
+
+button {
+    background-color: #284BCE;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 1rem;
+    font-weight: 600;
+    text-align: center;
+    width: 34vw;  /* 100% del ancho de la pantalla */
+    height: 9.5vh; /* 100% de la altura de la pantalla */
+    border: 1px solid #284BCE;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
